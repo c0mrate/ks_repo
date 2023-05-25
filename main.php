@@ -969,12 +969,12 @@ require_once('checkingSecondDoor.php');
           var url = window.location.href;
       
           // Check if the current URL contains "index.php"
-          if (url.includes("http://c0mrate.sytes.net/index.php")) {
+          if (url.includes("http://c0mrate.sytes.net/password.php")) {
             // If the URL contains "index.php", go back one page in the browser history
             window.history.back();
           } else {
             // If the URL does not contain "index.php", keep going back until we find it
-            while (!url.includes("http://c0mrate.sytes.net/index.php")) {
+            while (!url.includes("http://c0mrate.sytes.net/password.php")) {
               window.history.back();
               url = window.location.href;
             }
