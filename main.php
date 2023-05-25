@@ -967,23 +967,23 @@ require_once('checkingSecondDoor.php');
     <script>
         function goBack() {
             var url = window.location.href;
-            // Check if the current URL is the first page or contains "index.php"
-            if (url === "http://c0mrate.sytes.net/" || url.includes("http://c0mrate.sytes.net/index.php")) {
-            // If the URL is the first page or contains "index.php", go back one page in the browser history
+            var targetUrl = "http://c0mrate.sytes.net/";
+
+            // Check if the current URL is the target URL
+            if (url === targetUrl) {
+            // If the URL is the target URL, go back one page in the browser history
             window.history.back();
             } else {
-            // If the URL is not the first page or "index.php", keep going back until we find it
+            // If the URL is not the target URL, keep going back until we find it
             while (true) {
                 window.history.back();
                 url = window.location.href;
-                if (url === "http://c0mrate.sytes.net/" || url.includes("http://c0mrate.sytes.net/index.php")) {
+                if (url === targetUrl) {
                 break;
                 }
             }
             }
         }
     </script>
-
 </body>
-
 </html>
