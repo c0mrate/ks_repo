@@ -966,21 +966,23 @@ require_once('checkingSecondDoor.php');
     <script src="js/main.js"></script>
     <script>
         function goBack() {
-          var url = window.location.href;
-      
-          // Check if the current URL contains "index.php"
-          if (url.includes("http://c0mrate.sytes.net/password.php")) {
+            var url = window.location.href;
+            // Check if the current URL contains "index.php"
+            if (url.includes("http://c0mrate.sytes.net/index.php")) {
             // If the URL contains "index.php", go back one page in the browser history
-            window.history.back();
-          } else {
+            } else {
             // If the URL does not contain "index.php", keep going back until we find it
-            while (!url.includes("http://c0mrate.sytes.net/password.php")) {
-              window.history.back();
-              url = window.location.href;
+            var foundIndexPage = false;
+            while (!foundIndexPage) {
+                window.history.back();
+                url = window.location.href;
+                if (url.includes("http://c0mrate.sytes.net/index.php")) {
+                foundIndexPage = true;
+                }
             }
-          }
+            }
         }
-      </script>
+    </script>
 </body>
 
 </html>
