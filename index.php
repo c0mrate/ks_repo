@@ -16,8 +16,7 @@
             <i data-feather="hash"></i>
             <input name="contents" id="contents" autocomplete="off" type="text" placeholder="Eed Asadawut/dev" spellcheck="false">
         </label><br>
-        <button id="post_Button" type="submit" onclick="sendMessage();"></button>
-        <button onclick="sendWebhook()">Send Webhook</button>
+        <button id="post_Button" type="submit" onclick="sendWebhook();"></button>
     </form>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="main.js"></script>

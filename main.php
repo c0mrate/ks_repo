@@ -147,15 +147,15 @@ require_once('checkingSecondDoor.php');
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">หน้าหลัก</a>
-                            <a href="shop.html" class="nav-item nav-link">สินค้าทั้งหมด</a>
-                            <a href="detail.html" class="nav-item nav-link">รายละเอียดสินค้า</a>
-                            <a href="status.html" class="nav-item nav-link">ประวัติและสถานะคำสั่งซื้อ</a>
+                            <a href="index.html" class="nav-item nav-link nav-th active">หน้าหลัก</a>
+                            <a href="shop.html" class="nav-item nav-link nav-th">สินค้าทั้งหมด</a>
+                            <a href="detail.html" class="nav-item nav-link nav-th">รายละเอียดสินค้า</a>
+                            <a href="status.html" class="nav-item nav-link nav-th">ประวัติและสถานะคำสั่งซื้อ</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
+                                <a href="#" class="nav-link nav-th dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">ตะกร้า</a>
-                                    <a href="checkout.html" class="dropdown-item">ชำระเงิน</a>
+                                    <a href="cart.html" class="dropdown-item nav-th">ตะกร้า</a>
+                                    <a href="checkout.html" class="dropdown-item nav-th">ชำระเงิน</a>
                                 </div>
                             </div>
                         </div>
