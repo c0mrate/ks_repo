@@ -15,12 +15,23 @@ input.addEventListener('input', () => {
 
 function sendMessage() {
     const contents = document.getElementById('contents').value;
-    const request = new XMLHttpRequest();
-    request.open('POST', 'webhook.php');
-    request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-    const params = 'contents=' + encodeURIComponent(contents);
-    request.send(params);
-
-    console.log('Message Sent');
-}
+  
+    fetch('webhook.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: 'contents=' + encodeURIComponent(contents)
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Message Sent');
+      } else {
+        console.log('Error:', response.statusText);
+      }
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
+  }
+  
