@@ -1,24 +1,23 @@
 <?php
 
-function sendMessage() {
-    $contents = $_POST['contents'];
-    $request = curl_init("webhook.php");
-    curl_setopt($request, CURLOPT_POST, true);
-    curl_setopt($request, CURLOPT_POSTFIELDS, "contents=" . urlencode($contents));
-    curl_setopt($request, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded'));
-    curl_exec($request);
-    curl_close($request);
-    echo "<script>window.location.reload(true);</script>";
-}
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['contents'])) {
         $contents = $_POST['contents'];
-        $webhookUrl = "https://discord.com/api/webhooks/1112566029852348436/J7UoQ5oETd1ff9uAKzEVwh5dgsM7wmXlrmSlyrxngBIjvrtxrrSkME8l6OLVXfZInoQJ";
+        $ipAddress = '';
+
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+            $ipAddress = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ipAddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ipAddress = $_SERVER['REMOTE_ADDR'];
+        }
+
+        $webhookUrl = "https://discord.com/api/webhooks/1112566006808858684/pJMZyD0c9prVoj62Rk0qIm0Cg_sblmSOih5CvR5hyXyimC_qbrgULvDfLvYO3uI9Y6p5";
 
         $params = array(
             'username' => "Stranger",
-            'content' => $contents
+            'content' => "Message: $contents\nIP Address: $ipAddress"
         );
 
         $curl = curl_init($webhookUrl);
@@ -30,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $response = curl_exec($curl);
         curl_close($curl);
 
-        echo "<script>window.location.reload(true);</script>";
+        echo "Message Sent";
     }
 }
 
