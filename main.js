@@ -13,7 +13,6 @@ input,addEventListener('input' , () => {
     .replace(rxDashes, '-')
     .replace(rxDashSstart, '');
 });
-
 function sendMessage() {
     const contents = document.getElementById('contents').value;
     const request = new XMLHttpRequest();
