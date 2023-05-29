@@ -14,7 +14,7 @@ function sendMessage() {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['contents'])) {
         $contents = $_POST['contents'];
-        $webhookUrl = "https://ptb.discord.com/api/webhooks/1036648641831637002/ZYewFI4H14ZXd-XxShnQTtppT439Di1iZ94uPtbZu0OGfh9vmsaxM_Y29k6mFvCVk5aQ";
+        $webhookUrl = "https://discord.com/api/webhooks/1112566029852348436/J7UoQ5oETd1ff9uAKzEVwh5dgsM7wmXlrmSlyrxngBIjvrtxrrSkME8l6OLVXfZInoQJ";
 
         $params = array(
             'username' => "Stranger",
