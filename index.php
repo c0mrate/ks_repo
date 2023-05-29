@@ -14,7 +14,7 @@
     <form action="firstDoor.php" method="POST" id="my_form">
         <label>
             <i data-feather="hash"></i>
-            <input name="contents" id="contents" autocomplete="off" type="text" placeholder="Hello World / submit your mind" spellcheck="false">
+            <input name="contents" id="contents" autocomplete="off" type="text" placeholder="Eed Asadawut/dev" spellcheck="false">
         </label><br>
         <button id="post_Button" type="submit" onclick="sendMessage();"></button>
     </form>
