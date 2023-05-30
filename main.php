@@ -33,8 +33,8 @@ require_once('checkingSecondDoor.php');
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a><button href="sign_in.html" class="dropdown-item" type="button" >Login</button></a>
-                            <a><button href="sign_up.html" class="dropdown-item" type="button" >Create</button></a>
+                            <a href="sign_in.html"><button class="dropdown-item" type="button" >Login</button></a>
+                            <a href="sign_up.html"><button class="dropdown-item" type="button" >Create</button></a>
                             <a><button class="dropdown-item" type="button" onclick="goBack()">Exit</button></a>
                         </div>
                     </div>
