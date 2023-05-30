@@ -1267,10 +1267,27 @@ pre code {
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
   }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:active {
+      text-decoration: underline;
+  }
+  .navbar-nav .nav-link.active {
+      text-decoration: underline;
+  }
+
   .col-lg-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%;
-  }
+  } */
+
+
   .col-lg-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
@@ -4019,6 +4036,12 @@ input[type="button"].btn-block {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
+}
+
+.con-a-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-content > .tab-pane {
