@@ -34,11 +34,7 @@ require_once('checkingSecondDoor.php');
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a><button href="sign_in.html" class="dropdown-item" type="button" >Login</button></a>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right">
                             <a><button href="sign_up.html" class="dropdown-item" type="button" >Create</button></a>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right">
                             <a><button class="dropdown-item" type="button" onclick="goBack()">Exit</button></a>
                         </div>
                     </div>
