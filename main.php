@@ -33,6 +33,12 @@ require_once('checkingSecondDoor.php');
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
+                            <a><button href="sign_in.html" class="dropdown-item" type="button" >Login</button></a>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a><button href="sign_up.html" class="dropdown-item" type="button" >Create</button></a>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right">
                             <a><button class="dropdown-item" type="button" onclick="goBack()">Exit</button></a>
                         </div>
                     </div>
@@ -125,7 +131,7 @@ require_once('checkingSecondDoor.php');
                                 <a href="main.php" class="nav-item nav-link nav-th active">หน้าหลัก</a>
                                 <a href="shop.html" class="nav-item nav-link nav-th">สินค้าทั้งหมด</a>
                                 <a href="detail.html" class="nav-item nav-link nav-th">รายละเอียดสินค้า</a>
-                                <a href="status.html" class="nav-item nav-link nav-th">ประวัติและสถานะคำสั่งซื้อ</a>
+                                <a href="status.html" class="nav-item nav-link nav-th">สถานะคำสั่งซื้อ</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link nav-th dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
                                     <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
