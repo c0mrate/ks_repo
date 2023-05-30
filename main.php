@@ -53,16 +53,12 @@ require_once('checkingSecondDoor.php');
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">THB</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">USD</button>
-                            <!-- <button class="dropdown-item" type="button">GBP</button>
-                            <button class="dropdown-item" type="button">CAD</button> -->
                         </div>
                     </div>
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">TH</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">EN</button>
-                            <!-- <button class="dropdown-item" type="button">AR</button>
-                            <button class="dropdown-item" type="button">RU</button> -->
                         </div>
                     </div>
                 </div>
