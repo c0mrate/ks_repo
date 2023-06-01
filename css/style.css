@@ -161,7 +161,7 @@ a {
 }
 
 a:hover {
-  color: #e6b400;
+  color: #f76f0000;
   text-decoration: underline;
 }
 
@@ -262,6 +262,14 @@ select {
 
 select {
   word-wrap: normal;
+}
+
+#user-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+#user-icon:hover {
+  transform: scale(1.2);
 }
 
 button,
